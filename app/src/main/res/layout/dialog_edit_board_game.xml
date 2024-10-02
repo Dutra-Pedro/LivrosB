@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:id="@+id/ivGame"/>
+
+    <EditText
+        android:id="@+id/editTextLivroTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titulo do Livro"/>
+
+    <EditText
+        android:maxLines="2"
+        android:id="@+id/editTextLivroImageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL da imagem do Livro" />
+
+    <EditText
+        android:maxLines="5"
+        android:id="@+id/editTextLivroAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Autor do Livro"/>
+</LinearLayout>

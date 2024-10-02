@@ -1,0 +1,64 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewLivro"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/textViewLivroTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:text="Titulo do Livro"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLivro" />
+
+    <TextView
+        android:id="@+id/textViewLivroAutor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxLines="3"
+        android:text="Autor do Livro"
+        app:layout_constraintEnd_toEndOf="@+id/textViewLivroTitulo"
+        app:layout_constraintStart_toStartOf="@+id/textViewLivroTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLivroTitulo" />
+
+
+    <ImageView
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDelete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLivroAutor" />
+
+    <ImageView
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonEdit"
+        app:layout_constraintTop_toTopOf="@+id/buttonEdit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

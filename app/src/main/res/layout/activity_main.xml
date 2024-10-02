@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_marginVertical="32dp"
+        android:layout_gravity="center"
+        android:layout_width="96dp"
+        android:layout_height="96dp" />
+
+    <EditText
+        android:id="@+id/editTextLivroTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titulo do Livro" />
+
+    <EditText
+        android:id="@+id/editTextLivroImageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL da imagem do Livro" />
+
+    <EditText
+        android:minLines="3"
+        android:maxLines="5"
+        android:gravity="top"
+        android:id="@+id/editTextLivroAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Autor do Livro" />
+
+    <Button
+        android:id="@+id/buttonAddLivro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:text="Adicionar Livro" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLivros"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
